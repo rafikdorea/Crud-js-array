@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD com Array</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Gerenciador de Usuários (CRUD com Array)</h1>
+        <section class="form-container">
+            <h2 id="formTitle">Adicionar Novo Usuário</h2>
+            <form id="userForm">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" placeholder="Nome do usuário" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="email@example.com" required>
+                </div>
+                <button type="submit">Adicionar</button>
+            </form>
+        </section>
+        <section class="table-container">
+            <h2>Lista de Usuários</h2>
+            <table id="userTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="backend.js"></script>
+    <script src="frontend.js"></script>
+</body>
+</html>
